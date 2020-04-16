@@ -1,5 +1,9 @@
-# 12. Faça um programa que receba três números obrigatoriamente em ordem crescente e um quarto número que não siga essa regra. Mostre, em seguida, os quatro números em ordem decrescente. Suponha que o usuário digitará quatro números diferentes.
-
+#####################################################################################################################
+# 12. Faça um programa que receba três números obrigatoriamente
+# em ordem crescente e um quarto número que não siga essa regra.
+# Mostre, em seguida, os quatro números em ordem decrescente.
+# Suponha que o usuário digitará quatro números diferentes.
+#
 # SE numero4 > numero3
 #    ESCREVA “A ordem decrescente é: “,numero4,“-”,numero3,“-”,numero2,“-”,numero1
 # SE numero4 > numero2 E numero4 < numero3
@@ -8,13 +12,13 @@
 #    ESCREVA “A ordem decrescente é: “,numero3,“-”,numero2,“-”,numero4, “-”,numero1
 # SE numero4 < numero1
 #    ESCREVA “A ordem decrescente é: “,numero3,“-”,numero2,“-”,numero1,“-”,numero4
-
+#
 # Primeiro resultado
-
+#
 # Double-click (or enter) to edit
-
+#
 # Segundo resultado
-
+########################################################################################################################
 n1 = float (input ('Digite o 1º Numero: '))
 n2 = float (input ('Digite o 2º Numero: '))
 if  n2  >  n1 : # verifica se o primeiro número é menor que o segundo para continuar
@@ -35,3 +39,4 @@ if  n2  >  n1 : # verifica se o primeiro número é menor que o segundo para con
         print ('Este número precisa ser maior que o anterior!') # se n3 não for maior que n2, execute-o
 else:
     print ('Este número precisa ser maior que o anterior!') # e n2 não for maior que n1, execute-o
+#############################################################################################################################
