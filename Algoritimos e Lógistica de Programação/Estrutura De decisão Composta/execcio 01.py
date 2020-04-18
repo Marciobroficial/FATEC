@@ -6,7 +6,7 @@
 ##################################################################################################################################################
 #Entrada de dados
 print ('<->' *25) # linha de separação
-salario = float (input("Digite o Salário Atual: R$ ")) # indica o salario da pessoa
+salario = float (input("\nDigite o Salário Atual: R$ ")) # indica o salario da pessoa
 print ('<->' *25) # linha de separação
 #Processamento
 if salario <= 300: 

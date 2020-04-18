@@ -10,9 +10,9 @@
 ##############################################################################################################
 
 from  math  import  sqrt
-print ( '='  *25 )
+print ( '<->'  *35 )
 print ( '\nMenu de opções: \n1º Adicione dois números. \n2º A raiz quadrada de um número.' ) 
-print ( '=' * 25 )
+print ( '<->' * 35 )
 opção  =  int ( input ( '\nEscolha uma das opções do menu: ' ))
 if  opção  ==  1 : 
     n1  =  int ( input ( 'Digite o primeiro número: ' ))
@@ -23,3 +23,4 @@ elif opção ==  2 :
     print ( 'A raiz quadrada de {} é {}' .format ( n , sqrt ( n )))
 else :
     print ( 'opção inválida' )
+    print ('=' *35)
