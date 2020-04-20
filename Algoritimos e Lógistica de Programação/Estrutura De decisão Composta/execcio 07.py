@@ -10,11 +10,13 @@
 #  Acima do peso	    Entre 25.1 e 30
 #  Obeso	            Acima de 30
 ############################################################################################################################
+print('<->'*35)
+print()
 peso = float (input('Qual seu peso: '))
 alt = float (input ('Qual sual altura: '))
 imc = peso / (alt**2)
 print ('Imc',imc)
-if imc <= 18.5:
+if imc <= 18.5 :
     print ('vc está abixo do peso')
 elif imc >= 18.5 and imc<= 25:
     print ('Você está no peso ídeal')
@@ -22,4 +24,6 @@ elif imc >= 25.1 and imc <= 30:
     print ('Você está Acima do peso')
 else:
      print ('Você está Obeso')
+print()
+print('<->'*35)     
 #############################################################################################################################     

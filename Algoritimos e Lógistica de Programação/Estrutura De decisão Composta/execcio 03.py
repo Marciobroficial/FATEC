@@ -9,9 +9,9 @@
 # mulher: (62.1 * altura) - 44.7
 ##########################################################################
 #entrada
-altura = float (input ('Digite a sua altura: '))
+print ('<->' *35)
+altura = float (input ('\nDigite a sua altura: '))
 sexo = input ('Digite seu sexo M ou F: ')
-
 #Procedimento
 h = (72.7*altura) - 58
 m = (62.1*altura) - 44
@@ -23,4 +23,7 @@ elif sexo == 'F' or sexo == 'f':
   print ('Peso Ideal',m)
 else:
     print ('Sexo Invalido')
+print ()    
+print ('<->' *35)
+
 ###########################################################################    

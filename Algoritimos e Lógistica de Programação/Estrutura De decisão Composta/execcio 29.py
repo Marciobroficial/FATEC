@@ -1,9 +1,9 @@
 #####################################################################################################################
-# 29. Faça um programa que: Receba o valor do salário mínimo,
-# o turno de trabalho (M — matutino; V — vespertino; ou N — noturno),
-# a categoria (O — operário; G — gerente)
-# número de horas trabalhadas no mês de um funcionário.
-# Suponha a digitação apenas de dados válidos e, quando houver digitação de letras, utilize maiúsculas.
+#  29. Faça um programa que: Receba o valor do salário mínimo,
+#  o turno de trabalho (M — matutino; V — vespertino; ou N — noturno),
+#  a categoria (O — operário; G — gerente)
+#  número de horas trabalhadas no mês de um funcionário.
+#  Suponha a digitação apenas de dados válidos e, quando houver digitação de letras, utilize maiúsculas.
 #
 #   Calcule e mostre:
 #
@@ -96,47 +96,51 @@
 ########################################################################################################################
 print ('<->' *35)
 salário = float ( input ( '\nDigite seu salário mínimo :> ' ))
-turno = int ( input ( 'Em que período do dia você trabalha?\n Digite (M) para Matutino, \n(v) para Vespertino e \n(N) para Noturno :>' ))
-category  =  int ( input ( 'Qual é a sua categoria na empresa? Digite O para OPERATOR ou M para MANAGER :> ' ))
-hours_worked  =  float ( input ( 'Digite o número de horas trabalhadas pelo funcionário durante o mês :> ' ))
+turno = str ( input ( '\nEm que período do dia você trabalha?:\n\n(M) Matutino\n(v) Vespertino\n(N) para Noturno \n\nDigite o codigo acima :> ' ))
+categoria  =  str ( input ( '\nQual é a sua categoria na empresa?:\n\n(O) Operário \n(G) Gerente \n\nDigite o codigo acima :> ' ))
+print ()
+horas_trab =  float ( input ( 'Digite o número de horas trabalhadas pelo funcionário durante o mês :> ' ))
+print ()
+if turno == "M" or "m" :
+    coef = salário * 10 / 100
+elif turno == "V" or "v" :
+    coef  = salário * 15 / 20
+elif turno == "N" or "n" :
+    coef  = salário * 20 / 100
+print ( 'O coeficiente do salário é: {: .2f}' .format (coef))
+sal_bruto = horas_trab * coef
+print ( "O salário bruto é: {: .2f}" .format ( sal_bruto ))
 
-if turno == "M" :
-    coeficiente = salário * 10 / 100
-elif turno == "A" :
-    coeficiente  = salário * 15 / 20
-elif turno == "N":
-    coeficiente  = salário * 20 / 100
-print ( 'O coeficiente do salário é: {}' .format ( coeficiente ))
-
-sal_bruto = horas_trabalhadas  * coeficiente
-print ( "O salário bruto é: {}" .format ( sal_bruto ))
-
-if categoria  ==  "O" :
+if categoria  ==  "O" or "o" :
     if sal_bruto >= 300:
         impostos = sal_bruto * 5 / 100
     else :
-        imposto = sal_bruto * 3 / 100
+        impostos = sal_bruto * 3 / 100
 else:
     if sal_bruto >= 400:
-        imposto  =  sal_bruto  *  6  /  100
+        impostos  =  sal_bruto * 6 / 100
     else:
-        imposto  =  sal_bruto  *  4  /  100
-print ( "O imposto a ser pago com base no salário bruto é: {}" . formato ( imposto ))
-if  turno  ==  "N"  and  hours_worked  >  80 :
+        impostos = sal_bruto * 4 / 100
+print ( 'O imposto a ser pago com base no salário bruto é: {: .2f}' .format ( impostos ))
+if  turno  == "N" and horas_trab >  80 :
      bônus = 50
 else:
      bônus = 30
-print ( "O bônus calculado para esse funcionário com base em suas horas trabalhadas e turno é: {}" . formato ( bônus ))
-if  categoria  ==  "O"  or  coeficiente <= 25 :
+print ( 'O bônus calculado para esse funcionário com base em suas horas trabalhadas e turno é: {: .2f}' .format ( bônus ))
+if  categoria  ==  "G"  or  coef <= 25 :
     assistência  =  sal_bruto  * 1 / 3
 else:
     assistência  =  sal_bruto  *  1  / 2
-print ( "A assistência que você terá é: {}" .format ( assistência ))
-net_wages  =  salário bruto  -  imposto  +  bônus  +  assistência
-print ( "Seu salário líquido é: R$ {}" .format ( net_wages ))
-if net_wages  <  350 :
+print ( "A assistência que você terá é: {: .2f}" .format ( assistência ))
+salario_liquido  =  sal_bruto - impostos + bônus + assistência
+print ( "Seu salário líquido é: R$ {: .2f}" .format ( salario_liquido ))
+
+if salario_liquido < 350 :
     print ( "Você é mal pago." )
-elif net_wages >= 350  and net_wages <= 600:
+    print ('<->' *35)
+elif salario_liquido >= 350  and salario_liquido <= 600:
     print ( "Você tem salário está bem" )
 else:
     print ( "Você é bem pago" )
+print ()   
+print ('<->' *35)   

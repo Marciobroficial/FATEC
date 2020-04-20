@@ -6,15 +6,17 @@
 # e depois uma mensagem se ela é ou não maior de idade.
 #########################################################################
 #Entrada de dados
-print ('<->' * 25)
-nome = input ("Digite seu nome: ")
+print ('<->' * 35)
+nome = input ("\nDigite seu nome: ")
 idade = int (input("Diginte a sua idade: "))
 
 #Procedimento
 if idade >= 18:
- print ('Seu nome é:', (nome))
+ print ('\nSeu nome é:', (nome))
  print ('Sua idade é:', (idade))
  print ("Você é maior de idade", "")
 else:
+     print ('\nSeu nome é:', (nome))
      print ("Você é menor de idade",)
-print ('<->' * 25)
+print ()     
+print ('<->' * 35)

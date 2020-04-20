@@ -11,7 +11,8 @@
 #
 ##########################################################################################################################
 # Entrada
-sm = float (input('Digite o saldo medio do ultimo ano: '))
+print ('<->'*35)
+sm = float (input('\nDigite o saldo medio do ultimo ano: '))
 if sm >=0 and sm <=200:
   print ('Crédito Negado')
 elif sm > 201 and sm >= 400:
@@ -23,4 +24,6 @@ elif sm > 401 and sm >= 600:
 else:
   credito = sm * 40/100
   print ('Seu credito será de:',credito)
+print ()
+print ('<->'*35)
 ############################################################################################################################  

@@ -42,6 +42,7 @@ print ( '<->' * 35)
 print ( '\nMeunu de opções:\n \nnº 1. Contador 50% \nnº 2. Secretário 35% \nnº 3. Funcionário bancário 20% \nnº 4. Gerente 10% \nnº 5. Diretor Sem aumento de pagamento' )
 
 opção  =  int ( input ( '\nDigite uma das opções do menu de acordo com a sua posição :> ' ))
+print ()
 salários = int ( input ('Digite o seu salário atual?:> R$: ' ))
 
 if  opção  ==  1 :

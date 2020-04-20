@@ -15,6 +15,8 @@
 #     ESCREVA “Deve tirar nota”, nota_exame, “para ser aprovado”
 #
 ######################################################################################################################
+print('<->'*35)
+print()
 nt1 = float (input ('Digite a primeira nota: '))
 nt2 = float (input ('Digite a segunda nota: '))
 nt3 = float (input ('Digite a terceira nota: '))
@@ -27,4 +29,6 @@ elif md >= 3.0 and md <= 7:
     print ('Deve tira:',n_e , 'Para ser Aprovado')
 else:
     print ('Média: ',md , 'Aprovado: ')
+print()
+print('<->'*35)    
 #########################################################################################################################   

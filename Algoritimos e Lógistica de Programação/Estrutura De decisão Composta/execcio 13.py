@@ -62,54 +62,61 @@ B = int (input ('Digite um valor para B: '))
 C = int (input ('Digite um valor para C: '))
 print ('<->' *25)
 I = int ( input ('\n(1) ordem crescente \n(2) ordem decrescente \n(3) número maior ao centro \nSelecione uma das opções acima:-> '))
-#condisões para verificar a ordem dos números de acordo com a escolha do usuário e a saída desses resultados
 print ('<->' *25)
 if I == 1:
     if A<B and A<C:
         if B<C:
-            print ('\nA ordem crescente dos números é: {} - {} - {}' .format (A, B, C))
-        else:
-            print ('\nA ordem crescente dos números é: {} - {} - {}' .format (A, C, B))
+            print ('\nA ordem crescente dos números é: {} - {} - {}\n' .format ( A, B, C ))
             print ('<->' *25)
-if B<A and B<C:
-    if A<C:
-            print ( '\nA ordem crescente dos números é: {} - {} - {}' .format ( B, A, C ))
-    else:
-            print ( '\nA ordem crescente dos números é: {} - {} - {}' .format ( B, C, A ))
+        else:
+            print ('\nA ordem crescente dos números é: {} - {} - {}\n' .format ( A, C, B ))
+            print ('<->' *25)
+    if B<A and B<C:
+        if A<C:
+            print ( '\nA ordem crescente dos números é: {} - {} - {}\n' .format ( B, A, C ))
+            print ('<->' *25)
+        else:
+            print ( '\nA ordem crescente dos números é: {} - {} - {}\n' .format ( B, C, A ))
             print ('<->' *25)
     if C<A and C<B:
         if A<B:
-            print ( '\nA ordem crescente dos números é:  {} - {} - {}' .format ( C, A, B ))
+            print ( '\nA ordem crescente dos números é:  {} - {} - {}\n' .format ( C, A, B ))
+            print ('<->' *25)
         else:
-            print ( '\nA ordem crescente dos números é:  {} - {} - {}' .format ( C, B, A ))
+            print ( '\nA ordem crescente dos números é:  {} - {} - {}\n' .format ( C, B, A ))
             print ('<->' *25)
 if  I  ==  2 :
     if  A  >  B  and  A  >  C :
         if  B  >  C :
-            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}' .format ( A , B , C ))
+            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}\n' .format ( A , B , C ))
+            print ('<->' *25)
         else:
-            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}' .format ( A , C , B ))
+            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}\n' .format ( A , C , B ))
+            print ('<->' *25)
     if  B  >  A  and  B  >  C :
         if  A  >  C :
-            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}' .format ( B , A , C ))
+            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}\n' .format ( B , A , C ))
+            print ('<->' *25)
         else:
-            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}' .format ( B , C , A ))
+            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}\n' .format ( B , C , A ))
+            print ('<->' *25)
     if  C  >  A  and  C  >  B :
         if  A  >  B :
-            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}' .format ( A , B , C ))
+            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}\n' .format ( A , B , C ))
+            print ('<->' *25)
         else:
-            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}' .format ( A , C , B ))
+            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}\n' .format ( A , C , B ))
             print ('<->' *25)
 if  I  ==  3 :
     if  A  >  B  and  A  >  C :
-        print ( '\nO pedido solicitado é: {} - {} - {}' .format ( B , A , C ))
+        print ( '\nO pedido solicitado é: {} - {} - {}\n' .format ( B , A , C ))
         print ('<->' *25)
     if  B  >  A  and  B  >  C :
-        print ( '\nO pedido solicitado é: {} - {} - {}' .format ( A , B , C ))
+        print ( '\nO pedido solicitado é: {} - {} - {}\n' .format ( A , B , C ))
         print ('<->' *25)
     if  C  >  A  and  C  >  B :
-        print ( '\nO pedido solicitado é: {} - {} - {}' .format ( A , C , B ))
+        print ( '\nO pedido solicitado é: {} - {} - {}\n' .format ( A , C , B ))
         print ('<->' *25)
 if I > 3:
-        print ('\nA opção escolhida não existe')
+        print ('\nA opção escolhida não existe\n')
         print ('<->' *25)                   

@@ -19,6 +19,8 @@
 #
 # media_ponderada = (nota_traballho * 2 + avaliacao_semestral * 3 + exame_final * 5) / 10
 ###########################################################################################################################
+print('<->'*35)
+print()
 m1 = float (input ('Nota Trabalho de Laboratorio: '))
 m2 = float (input ('Nota Avaliação Semestral: '))
 m3 = float (input ('Nota Exame Final: '))
@@ -34,4 +36,6 @@ elif mp > 5.0 and mp < 6.0:
     print ('conceito D')
 else:
     print ('conceito E')
+print()
+print('<->'*35)     
 #############################################################################################################################    
