@@ -72,4 +72,5 @@ elif s_líquidos <  600 :
     print ( 'Você está classificado como B\n' )
 else:
     print ( 'Você está classificado como C\n' )
-print ('<->' *35)    
+print ('<->' *35)   
+## 

@@ -93,33 +93,32 @@ print ('<->'*35)
 print()
 preço =  float ( input ( 'Insira o preço do produto :> ' ))
 print()
-type  =  (input ( 'Escolha a categoria do produto: \n\nA-> Alimentação \nL-> LIMPEZA \nV-> Vestuário :> ' ))
+tipo  =  (input ( 'Escolha a categoria do produto: \n\nA-> Alimentação \nL-> LIMPEZA \nV-> Vestuário :> ' ))
 print ()
-refrigeração = (input ( 'O produto precisa de refrigeração?:\nI-> Para SIM \nN-> Para NÃO. :> ' ))
-if refrigeração == "N" :
-    if type == "F" :
+ref = (input ( 'O produto precisa de refrigeração?:\nI-> Para SIM \nN-> Para NÃO. :> ' ))
+if ref == "N" :
+    if tipo == "A" :
         if preço < 15 :
          valor_adic = 2
         else :
           valor_adic = 5
-    if  type == "C" :
+    if  tipo == "L" :
         if preço < 10 :
           valor_adic = 1.5
         else :
          valor_adic = 2.5
-    if  type == "A" :
+    if  tipo == "V" :
         if preço < 30 :
          valor_adic = 3
         else :
           valor_adic = 2.5
-elif type == "F" :
+elif tipo == "A" :
     valor_adic = 8
-    if  type == "C" :
+    if  tipo == "L" :
          valor_adic = 0
-    if  type == "A" :
+    if  tipo == "V" :
          valor_adic = 0
 print ( 'O valor adicionado ao produto é: R$ {:.2f}' .format (valor_adic))
-
 if  preço < 25 :
     impostos = preço * 5 / 100
 else :
@@ -127,7 +126,7 @@ else :
 print ( "O valor do imposto é: R$ {:.2f}" .format ( impostos ))
 preço_custo  =  preço  +  impostos
 print ( "O produto em custo é: R$ {:.2f}" .format ( preço_custo ))
-if  type  !=  "F" and  refrigeração != "I" :
+if  tipo  !=  "F" and  ref != "I" :
     desconto = preço_custo * 3 / 100
 else :
     desconto = 0

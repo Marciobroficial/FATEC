@@ -72,3 +72,4 @@ elif s_liquido > 350 :
 s_final  =  s_liquido  +  bônus
 print ( 'O salário total a ser recebido é: R$ {: .2f}\n' .format ( s_final ))
 print ('<->' *35)
+##

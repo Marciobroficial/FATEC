@@ -16,6 +16,8 @@
 #   SE numero1 < numero2
 #      ESCREVA “A ordem crescente é: “,numero3,“-”,numero1,“-”,numero2
 #######################################################################################################################
+print('<->'*35)
+print()
 n1 = float (input ('Digite o 1º numero: '))
 n2 = float (input ('Digite o 2º numero: '))
 n3 = float (input ('Digite o 3º numero: '))
@@ -35,4 +37,6 @@ if n3 < n1 and n3 < n2: # verifica se o último número é maior que o primeiro 
         print('A ordem crescente é: {:.0f} - {:.0f} - {:.0f}'.format(n3, n1, n2))
     else:
         print('A ordem crescente é:: {:.0f} - {:.0f} - {:.0f}'.format(n3, n2, n1))
+print()
+print('<->'*35)        
 ########################################################################################################################        

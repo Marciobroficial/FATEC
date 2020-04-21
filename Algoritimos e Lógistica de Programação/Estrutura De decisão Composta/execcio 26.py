@@ -47,9 +47,13 @@
 # ESCREVA valor_total
 ######################################################################################################################
 print ('<->' *35)
+print()
+print ( 'Menu de opções:\n\nCod - 01 a 04 Imposto 10% \nCod - 05 a 07 Imposto 20% \nCod - 08 a 10 Imposto 35% ' )
 cod_produto  =  int ( input ( "\nQual é o código do produto? :> " ))
 peso_por_kilo  =  float ( input ( "Qual é o peso do produto? Use (K.GM) :> " ))
-cod_produto  =  int ( input ( "Digite o código do país: " ))
+print()
+print ( 'Menu de opções:\n\nCod - 1 Imposto 0% \nCod - 2 Imposto 15% \nCod - 3 Imposto 25% ' )
+cod_produto  =  int ( input ( "\nDigite o código do país: " ))
 peso_por_gramas = peso_por_kilo * 1000
 print ( 'O peso em gramas é: {}\n' .format ( peso_por_gramas ))
 if  cod_produto >= 1 and cod_produto <= 4:

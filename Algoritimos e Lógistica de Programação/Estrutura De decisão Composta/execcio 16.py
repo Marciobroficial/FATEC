@@ -18,36 +18,45 @@
 #  SENÃO
 #      ESCREVA “As datas são iguais!”
 ################################################################################################################
-print('<->' * 25)
-
-print('\nPrimeiro Ano')
+print('<->' * 35)
+print()
+print('Primeiro Ano')
 dia = int (input( 'Digite o Dia: '))
 mes = int (input( 'Digite o mes: '))
 ano = int (input( 'Digite o Ano: '))
-
-print('<->' * 25)
-
-print ('\nSegundo Ano')
+print()
+print ('Segundo Ano')
 dia2 = int (input( 'Digite o Dia: '))
 mes2 = int (input( 'Digite o mes: '))
 ano2 = int (input( 'Digite o Ano: '))
-
-print('<->' * 25)
-
+print()
 print(ano == ano2)
 if  ano  >  ano2 :
     print ( 'A maior data é: {} / {} / {}' .format ( dia , mes , ano ))
+    print()
+    print ('<->' *25)
 elif ano2  >  ano :
     print ( 'A maior data é: {} / {} / {}' .format ( dia2 , mes2 , ano2 ))
+    print()
+    print ('<->' *25)
 elif mes  >  mes2 :
     print ( 'A maior data é: {} / {} / {}' .format ( dia , mes , ano ))
+    print()
+    print ('<->' *25)
 elif mes2  >  mes :
     print ( 'A maior data é: {} / {} / {}' .format ( dia2 , mes2 , ano2 ))
+    print()
+    print ('<->' *25)
 elif dia >  dia2 :
     print ( 'A maior data é: {} / {} / {}' .format ( dia , mes , ano ))
+    print()
+    print ('<->' *25)
 elif dia2  >  dia :
     print ( 'A maior data é: {} / {} / {}' .format ( dia2 , mes2 , ano2 ))
+    print()
+    print ('<->' *25)
 else :
-    print ( '\nAs datas são iguais!\n' )
+    print ( 'As datas são iguais!' )
+    print()
     print ('<->' *25)    
       

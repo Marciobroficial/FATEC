@@ -55,3 +55,4 @@ elif  hoje . month  ==  12 :
     hour =  hoje . hour  -  3
 print ( '\nA data e a hora atual é: {:02d} / {} / {} - {:02d}:{:02d}:{:02d} \n'.format ( hoje . day , month , hoje . year , hoje . hour , hoje . minute , hoje . second ))
 print ('<->' *44)
+##

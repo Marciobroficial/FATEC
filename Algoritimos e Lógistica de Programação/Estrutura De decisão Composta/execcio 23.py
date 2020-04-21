@@ -50,3 +50,4 @@ else:
         x2 = (-b - delta) / (2 * a)
         print ('As raises rais são: {: .2f} e {: .2f} \n' .format (x1 , x2))
 print ('<->' *35)
+##

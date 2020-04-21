@@ -56,13 +56,14 @@
 #   3 O maior fica entre os outros dois números.
 #
 #######################################################################################################################
+print()
 print ('<->' *25)
 A = int (input('\nDigite um valor para A: '))
 B = int (input ('Digite um valor para B: '))
 C = int (input ('Digite um valor para C: '))
-print ('<->' *25)
-I = int ( input ('\n(1) ordem crescente \n(2) ordem decrescente \n(3) número maior ao centro \nSelecione uma das opções acima:-> '))
-print ('<->' *25)
+print ()
+I = int ( input ('(1) ordem crescente \n(2) ordem decrescente \n(3) número maior ao centro \nSelecione uma das opções acima:-> '))
+print ('')
 if I == 1:
     if A<B and A<C:
         if B<C:

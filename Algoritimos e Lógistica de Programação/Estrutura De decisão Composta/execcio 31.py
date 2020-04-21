@@ -56,4 +56,5 @@ if angulo < 0:
 else: 
   print ('anti-horário')
 print()
-print('<->' *35)  
+print('<->' *35) 
+## 

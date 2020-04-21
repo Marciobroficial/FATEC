@@ -11,6 +11,7 @@
 # hora_duracao = hora_final - hora_inicial
 ###########################################################################################################################
 print ('<->' * 35)
+print()
 hora_inic  =  int ( input ( '\nDigite a hora em que o jogo começa :- ' ))
 minuto_inic =  int ( input ( 'Agora digite os minutos :- ' ))
 hora_final  =  int ( input ( 'Digite a hora em que o jogo termina :- ' ))
@@ -24,5 +25,6 @@ if  hora_inic  >  hora_final :
 minuto_duração  =  minuto_final  -  minuto_inic
 hora_duração  =  hora_final  -  hora_inic
 print ('O jogo durou {} horas: {} minutos\n' .format ( hora_duração , minuto_duração ))
-print ('<->' * 35)
+print()
+print ('<->' *35)
 

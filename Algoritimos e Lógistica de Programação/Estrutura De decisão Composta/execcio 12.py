@@ -19,6 +19,8 @@
 #
 # Segundo resultado
 ########################################################################################################################
+print('<->'*35)
+print()
 n1 = float (input ('Digite o 1º Numero: '))
 n2 = float (input ('Digite o 2º Numero: '))
 if  n2  >  n1 : # verifica se o primeiro número é menor que o segundo para continuar
@@ -39,4 +41,6 @@ if  n2  >  n1 : # verifica se o primeiro número é menor que o segundo para con
         print ('Este número precisa ser maior que o anterior!') # se n3 não for maior que n2, execute-o
 else:
     print ('Este número precisa ser maior que o anterior!') # e n2 não for maior que n1, execute-o
+print()
+print('<->'*35)
 #############################################################################################################################

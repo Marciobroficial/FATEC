@@ -27,3 +27,4 @@ else:
     aux_salario = 100
 print('Seu Novo salário com bonus e Auxilio Escolar será de R$: {:.2f}\n'.format ( salario +  bonus + aux_salario ))  
 print ( '<->' * 35 ) 
+##

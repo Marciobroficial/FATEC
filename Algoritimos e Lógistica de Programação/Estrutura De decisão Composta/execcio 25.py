@@ -33,7 +33,6 @@ print ('<->' *35)
 # armazena informações inseridas pelo usuário
 altura = float ( input ( '\nInsira a altura da pessoa aqui no seguinte formato: (M.CM) :> ' ))
 peso = float ( input ( 'Insira o peso da pessoa aqui no seguinte formato: (K.GM) :> ' ))
-
 if altura < 1.20:
     if peso <= 60:
         print ( '\nVocê está na categoria A\n' )

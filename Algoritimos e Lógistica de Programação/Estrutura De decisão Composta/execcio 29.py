@@ -1,5 +1,6 @@
 #####################################################################################################################
-#  29. Faça um programa que: Receba o valor do salário mínimo,
+#  29.Faça um programa que:
+#  Receba o valor do salário mínimo.
 #  o turno de trabalho (M — matutino; V — vespertino; ou N — noturno),
 #  a categoria (O — operário; G — gerente)
 #  número de horas trabalhadas no mês de um funcionário.
@@ -27,6 +28,7 @@
 # A gratificação, de acordo com as regras a seguir. Se o funcionário preencher todos os requisitos a seguir, sua gratificação # será de 50,00; caso contrário, será de 30,00. Os requisitos são:
 # Turno: Noturno
 # Número de horas trabalhadas: Superior a 80 horas
+
 # O auxílio alimentação, de acordo com as seguintes regras.
 # Auxilio alimentação, um terço do seu salário bruto; caso contrário, será de metade do seu salário bruto. Os requisitos são:
 # Se o funcionário preencher algum dos requisitos a seguir, seu auxílio alimentação será de
@@ -38,9 +40,9 @@
 # A classificação, de acordo com a tabela a seguir:
 #
 #           SALÁRIO LÍQUIDO	        MENSAGEM
-#           Menor que 350,00	    Mal remunerado
+#           Menor que   350,00	    Mal remunerado
 #           Entre 350 e 600,00	    Normal
-#           Maior que 600,00	    Bem remunerado
+#           Maior que   600,00	    Bem remunerado
 #
 # LEIA salario_minino, turno, categoria, numero_de_horas_trabalhadas
 # SE turno = “M”
@@ -95,7 +97,7 @@
 #      ESCREVA “Bem Remunerado”
 ########################################################################################################################
 print ('<->' *35)
-salário = float ( input ( '\nDigite seu salário mínimo :> ' ))
+salário = float ( input ( '\nDigite seu salário mínimo :> R$ ' ))
 turno = str ( input ( '\nEm que período do dia você trabalha?:\n\n(M) Matutino\n(v) Vespertino\n(N) para Noturno \n\nDigite o codigo acima :> ' ))
 categoria  =  str ( input ( '\nQual é a sua categoria na empresa?:\n\n(O) Operário \n(G) Gerente \n\nDigite o codigo acima :> ' ))
 print ()
@@ -107,9 +109,9 @@ elif turno == "V" or "v" :
     coef  = salário * 15 / 20
 elif turno == "N" or "n" :
     coef  = salário * 20 / 100
-print ( 'O coeficiente do salário é: {: .2f}' .format (coef))
+print ( 'O coeficiente do salário é: R$ {: .2f}' .format (coef))
 sal_bruto = horas_trab * coef
-print ( "O salário bruto é: {: .2f}" .format ( sal_bruto ))
+print ( "O salário bruto é: R$ {: .2f}" .format ( sal_bruto ))
 
 if categoria  ==  "O" or "o" :
     if sal_bruto >= 300:
@@ -121,17 +123,17 @@ else:
         impostos  =  sal_bruto * 6 / 100
     else:
         impostos = sal_bruto * 4 / 100
-print ( 'O imposto a ser pago com base no salário bruto é: {: .2f}' .format ( impostos ))
+print ( 'O imposto a ser pago com base no salário bruto é: R$ {:.2f}' .format ( impostos ))
 if  turno  == "N" and horas_trab >  80 :
      bônus = 50
 else:
      bônus = 30
-print ( 'O bônus calculado para esse funcionário com base em suas horas trabalhadas e turno é: {: .2f}' .format ( bônus ))
-if  categoria  ==  "G"  or  coef <= 25 :
+print ( 'O bônus calculado para esse funcionário com base em suas horas trabalhadas e turno é: R$ {:.2f}' .format ( bônus ))
+if  categoria  ==  "O"  or  coef <= 25 :
     assistência  =  sal_bruto  * 1 / 3
 else:
     assistência  =  sal_bruto  *  1  / 2
-print ( "A assistência que você terá é: {: .2f}" .format ( assistência ))
+print ( "A assistência que você terá é: R$ {:.2f}" .format ( assistência ))
 salario_liquido  =  sal_bruto - impostos + bônus + assistência
 print ( "Seu salário líquido é: R$ {: .2f}" .format ( salario_liquido ))
 

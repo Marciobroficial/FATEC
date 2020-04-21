@@ -28,12 +28,12 @@
 #   Até 700,00 (inclusive)      Mal remunerado
 #   Maiores que 700,00	        Bem remunerado
 #############################################################################################################################
-print ( '<->'  *  44 )
+print ('<->'*35)
+print()
 print ( 'Menu de opções: \nnº 1. Imposto \nnº 2. Novo salário \nnº 3. Classificação do salário' )
-print ( '<->'  *  44 )
 opção  =  int ( input ( 'Digite uma das opções do menu: ' ))
-salario  =  int ( input ( 'Qual é o seu salário atual ?: ' ))
-
+print()
+salario  =  int ( input ( 'Qual é o seu salário atual ?. R$: ' ))
 if  opção == 1 :
     if  salario < 500 :
         impostos = salario * 5 / 100
@@ -62,3 +62,5 @@ elif opção == 3 :
                 print ( "Você é Bem remunerado." )
 else :
     print ( "Opção inválida!" )
+print()
+print('<->'*35)
