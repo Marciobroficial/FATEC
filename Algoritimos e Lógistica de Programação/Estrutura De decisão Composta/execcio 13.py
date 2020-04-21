@@ -103,10 +103,10 @@ if  I  ==  2 :
             print ('<->' *25)
     if  C  >  A  and  C  >  B :
         if  A  >  B :
-            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}\n' .format ( A , B , C ))
+            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}\n' .format ( C , A , B ))
             print ('<->' *25)
         else:
-            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}\n' .format ( A , C , B ))
+            print ( '\nA ordem decrescente dos números digitados é: {} - {} - {}\n' .format ( C , B , A ))
             print ('<->' *25)
 if  I  ==  3 :
     if  A  >  B  and  A  >  C :
