@@ -30,7 +30,6 @@ dia2 = int (input( 'Digite o Dia: '))
 mes2 = int (input( 'Digite o mes: '))
 ano2 = int (input( 'Digite o Ano: '))
 print()
-print(ano == ano2)
 if  ano  >  ano2 :
     print ( 'A maior data é: {} / {} / {}' .format ( dia , mes , ano ))
     print()
