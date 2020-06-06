@@ -1,0 +1,1 @@
+10. Elabore um algoritmo que calcule e informe a média de idades de 5 alunos.

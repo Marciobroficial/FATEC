@@ -1,0 +1,1 @@
+7. Escreva um algoritmo que receba 23 números, calcule e exiba a quantidade de números pares e impares.

@@ -1,0 +1,1 @@
+24.Faça um programa para calcular a tabuada do 2 até a do 9. USE DUAS ESTRUTURAS DE REPETIÇÃO

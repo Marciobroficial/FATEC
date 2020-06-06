@@ -1,0 +1,1 @@
+13. Faça um algoritmo que leia de dez alunos altura e nome. Mostre o aluno mais alto e mais baixo e seus respectivos nomes.

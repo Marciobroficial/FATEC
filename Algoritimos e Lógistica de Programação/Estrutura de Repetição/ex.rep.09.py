@@ -1,0 +1,1 @@
+9. Faça um algoritmo que conheça 4 valores diferentes, some-os e mostre o resultado.
