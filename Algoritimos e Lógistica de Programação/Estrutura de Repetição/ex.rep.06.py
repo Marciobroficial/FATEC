@@ -3,14 +3,14 @@
 # sendo que a maioridade é obtida após completar 18 anos.
 ###############################################################
 
-maior = 0
-menor = 0
-for a in range (10):
-    idade = int (input ('Digite a idade: '))
+maiores = 0
+menores = 0
+for b in range (10):
+    idade = int(input("Digite a idade: "))
     if idade >= 18:
-        maior = maior +1
+        maiores =maiores + 1
     else:
-        menor = menor +1
-print("Temos",maior, "maior de idade: " )
-print("E ",menor, "de idade: ") 
+        menores = menores + 1
+print ("São de maior idade: ",maiores) 
+print ("São de menor idade: ",menores)           
 
