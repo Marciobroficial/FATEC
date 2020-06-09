@@ -116,3 +116,6 @@
 # ESCREVA total_de_produtos_baratos
 # ESCREVA total_de_produtos_normais
 # ESCREVA total_de_produtos_caros
+######################################################################################################
+
+
