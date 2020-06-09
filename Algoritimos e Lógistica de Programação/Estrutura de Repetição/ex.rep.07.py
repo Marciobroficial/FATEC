@@ -7,11 +7,7 @@ i = 0
 for r in range (23):
     n = int(input("Digite o numero: "))
     if n >= 23:
-
-
-
-
-maiores = 0
+        maiores = 0
 menores = 0
 for b in range (10):
     idade = int(input("Digite a idade: "))
